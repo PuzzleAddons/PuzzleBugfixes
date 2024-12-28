@@ -12,10 +12,10 @@
   },
   "entrypoints": {
     "client_init": [
-      "com.github.puzzle.bugfix.PuzzleBugFix"
+      "com.github.puzzle.bugfix.PuzzleBugFixClient"
     ],
     "init": [
-      "com.github.puzzle.bugfix.PuzzleBugFixClient"
+      "com.github.puzzle.bugfix.PuzzleBugFix"
     ]
   },
   "mixins": [
@@ -26,7 +26,7 @@
     }
   ],
   "depends": {
-    "cosmic-reach": ">=0.3.15",
+    "cosmic-reach": ">=0.3.12",
     "puzzle-loader": ">=2.1.15"
   }
 }
