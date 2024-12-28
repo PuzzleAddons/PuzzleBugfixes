@@ -1,5 +1,5 @@
-# Puzzle Loader Example Mod
-> The example mod for [Puzzle Loader](https://github.com/PuzzleLoader/PuzzleLoader)
+# Puzzle Bugfixes
+> A mod to try to fix some bugs within the base game.
 
 ## How To Test Client & Server
 For Client testing in the dev env, you can use the `gradle runClient` task

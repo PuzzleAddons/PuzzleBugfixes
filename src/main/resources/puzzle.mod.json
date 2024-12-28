@@ -5,28 +5,28 @@
   "name": "${mod_name}",
   "description": "${mod_desc}",
   "authors": [
-    "YOU :D"
+    "Mr Zombii"
   ],
   "meta": {
     "icon": "example-mod:icons/icon.png"
   },
   "entrypoints": {
     "client_init": [
-      "org.example.exmod.ClientInitializer"
+      "com.github.puzzle.bugfix.PuzzleBugFix"
     ],
     "init": [
-      "org.example.exmod.ExampleMod"
-    ],
-    "preInit": [
-      "org.example.exmod.ExampleModPreinit"
+      "com.github.puzzle.bugfix.PuzzleBugFixClient"
     ]
   },
   "mixins": [
-    "example.mixins.json"
+    "common_bugfixes.mixins.json",
+    {
+      "config": "client_bugfixes.mixins.json",
+      "environment": "client"
+    }
   ],
   "depends": {
-    "cosmic-reach": ">=0.3.6",
-    "puzzle-loader": ">=2.0.9"
-  },
-  "accessManipulator": "example_mod.manipulator"
+    "cosmic-reach": ">=0.3.15",
+    "puzzle-loader": ">=2.1.15"
+  }
 }
